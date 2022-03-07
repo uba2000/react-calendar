@@ -3,8 +3,10 @@ import React, { useState, useEffect, useRef } from 'react'
 
 function App() {
 
-  const date = new Date();
+  // Date: 1..31
+  // Day: 0..6 (sun..sat)
 
+  const date = new Date();
   const [month, setMonth] = useState('')
   const [auxMonth, setAuxMonth] = useState('')
   const monthDays = useRef();
